@@ -9,7 +9,7 @@ namespace LibraryManagementSystem
 {
     public static class DatabaseHandler
     {
-        private static String ServerName = @"HEATZROG\TEW_SQLEXPRESS";
+        private static String ServerName = @"DESKTOP-PSPT35V\SQLEXPRESS";
 
         private static SqlConnection sqlConnection;
 
@@ -17,7 +17,6 @@ namespace LibraryManagementSystem
         {
             try
             {
-                //Data Source=HEATZROG\TEW_SQLEXPRESS;Initial Catalog=LIBRARYMS;Integrated Security=True
                 sqlConnection = new SqlConnection("Data Source='" + ServerName + "'; Initial Catalog=LIBRARYMS;Integrated Security=True");
             }
             catch (SqlException e)
